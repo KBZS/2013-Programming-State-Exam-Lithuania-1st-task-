@@ -1,23 +1,23 @@
 #include <iostream>
 #include <fstream>
-
+//2013 1st task
 using namespace std;
 
-struct imon
-{
-    string pav;
-    int x;
-    int y;
+struct imon                                 //structure of the complex array to read and store
+{                                           //the data from the list of organisations
+    string pav;                             //string for the organisations' names
+    int x;                                  //first coordinate
+    int y;                                  //second coordinate
 };
 
 imon A[51];
 int n, m, rez, sk;
 
-void nuskaitymas();
-void skaiciavimai();
-void spausdinimas();
+void nuskaitymas();                         //function for reading from data file
+void skaiciavimai();                        //function for calculations
+void spausdinimas();                        //function for writing to the result (output) file
 
-int main() // pagrindine programa
+int main()                                  //main function
 {
     nuskaitymas();
     skaiciavimai();
@@ -31,7 +31,7 @@ int main() // pagrindine programa
     return 0;
 }
 
-void nuskaitymas() // skaitymas is failo
+void nuskaitymas()                          //reading function
 {
     char eil[10];
     ifstream fd("U1.txt");
@@ -51,7 +51,7 @@ void nuskaitymas() // skaitymas is failo
     fd.close();
 }
 
-void skaiciavimai() // kelioniu atstumu skaiciavimas
+void skaiciavimai()                         //calculation of the drive km by driver for each delivery
 {
     int temp = 0;
     rez = 0;
@@ -68,7 +68,7 @@ void skaiciavimai() // kelioniu atstumu skaiciavimas
         rez = rez - temp;
 }
 
-void spausdinimas() // rezultato isvedimas i faila
+void spausdinimas()                         //output
 {
     ofstream fr("U1rez.txt");
     fr << sk+1 << " " << rez << " " << A[sk].pav << endl;
