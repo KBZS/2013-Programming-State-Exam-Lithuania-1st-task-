@@ -5,6 +5,7 @@ The solution for the first task of the 2013 IT State exam (Lithuania) Check Proj
 Task:
 
 There is certain delivery organisation which works in the city N. In this city all streets are intersect perpendicularly. And the distance between all intersection on the same street is 1 km. All offices in this city are located near those intersections and have unique coordinates (x,y), so the office of this delivery service located near the main intersection in the center of the city (coordinates: (0,0)). This organisation deliver to all offices in this city. (Check the taskImage.jpg file for clarification)
+
 Drivers of this delivery organisation work by this algorithm: They start at the delivery organization’s office (0,0) and move to their destination (one of the offices (x,y)). Then they come back to the office (0,0) and take next delivery and start over. They will continue to do this algorithm until they will deliver all packages in the list or they will reach the limit of the km per day.
 You have to calculate how many packages they deliver (from the list), how many km have been driven and return the name of the last office which was visited by a driver.
 
