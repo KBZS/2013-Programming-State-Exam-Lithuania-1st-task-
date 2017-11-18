@@ -19,4 +19,5 @@ Results must be in the U1rez.txt file. There should be two integers and one stri
 
 Additional information and restrictions:
 
-You have to create a function for reading the data from the data file (U1.txt). You have to create a function for calculations. You have to create a function for writing the results to the results file (U1rez.txt). You are not allowed to perform any actions with command line.
+You have to create a function for reading the data from the data file (U1.txt). You have to create a function for calculations. You have to create a function for writing the results to the results file (U1rez.txt). You are not allowed to perform any actions with command line. 
+
